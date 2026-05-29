@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SkyDev — Tu negocio merece estar en línea</title>
+  <meta name="description" content="SkyDev es tu agencia web completa. Diseño, desarrollo y marketing digital para pymes y minoristas. Tiendas online, branding, SEO y más." />
+  <meta name="keywords" content="diseño web, tienda online, e-commerce, marketing digital, SEO, pymes, Argentina" />
+  <meta name="author" content="SkyDev Web Services" />
+
+  <!-- Open Graph (redes sociales) -->
+  <meta property="og:title" content="SkyDev — Tu negocio merece estar en línea" />
+  <meta property="og:description" content="Agencia web completa para pymes y minoristas. Diseño, desarrollo y marketing digital." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tuusuario.github.io/skydev/" />
+  <!-- <meta property="og:image" content="/assets/og-image.jpg" /> -->
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Nuestros estilos -->
+  <link rel="stylesheet" href="/src/css/tokens.css" />
+  <link rel="stylesheet" href="/src/css/reset.css" />
+  <link rel="stylesheet" href="/src/css/global.css" />
+  <link rel="stylesheet" href="/src/css/nav.css" />
+  <link rel="stylesheet" href="/src/css/hero.css" />
+  <link rel="stylesheet" href="/src/css/ticker.css" />
+  <link rel="stylesheet" href="/src/css/services.css" />
+  <link rel="stylesheet" href="/src/css/how.css" />
+  <link rel="stylesheet" href="/src/css/pricing.css" />
+  <link rel="stylesheet" href="/src/css/testimonials.css" />
+  <link rel="stylesheet" href="/src/css/cta.css" />
+  <link rel="stylesheet" href="/src/css/footer.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="SkyDev — inicio">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 23 L15 7 L22 23" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="11" y1="17" x2="19" y2="17" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="22" cy="10" r="3.2" fill="white" opacity="0.88"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">Sky<em>Dev</em></span>
+      </a>
+
+      <!-- Links desktop -->
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#como-funciona" class="nav__link">Cómo funciona</a>
+        <a href="#precios" class="nav__link">Precios</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+
+      <!-- CTA + burger -->
+      <div class="nav__actions">
+        <a href="#contacto" class="btn btn--primary btn--sm">Empezar ahora</a>
+        <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+      <a href="#servicios"     class="nav__mobile-link">Servicios</a>
+      <a href="#como-funciona" class="nav__mobile-link">Cómo funciona</a>
+      <a href="#precios"       class="nav__mobile-link">Precios</a>
+      <a href="#contacto"      class="nav__mobile-link">Contacto</a>
+      <a href="#contacto"      class="btn btn--primary nav__mobile-cta">Empezar ahora</a>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg-circle hero__bg-circle--1" aria-hidden="true"></div>
+    <div class="hero__bg-circle hero__bg-circle--2" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+
+      <div class="hero__content" data-aos="fade-right" data-aos-duration="800">
+        <div class="hero__tag">
+          <span class="hero__tag-dot" aria-hidden="true"></span>
+          Agencia web completa
+        </div>
+
+        <h1 class="hero__title">
+          Tu negocio<br>
+          merece estar<br>
+          <em>en línea.</em>
+        </h1>
+
+        <p class="hero__sub">
+          Diseño, desarrollo y marketing digital para pymes y minoristas
+          que quieren crecer, vender más y conectar con sus clientes.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary btn--lg">
+            Empezar ahora
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#servicios" class="btn btn--ghost btn--lg">
+            <i class="bi bi-play-circle" aria-hidden="true"></i>
+            Ver servicios
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats flotantes -->
+      <div class="hero__stats" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="hero__stat">
+          <span class="hero__stat-num"><span class="counter" data-target="120">0</span>+</span>
+          <span class="hero__stat-label">Proyectos entregados</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num"><span class="counter" data-target="98">0</span>%</span>
+          <span class="hero__stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">7 días</span>
+          <span class="hero__stat-label">Entrega promedio</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       TICKER
+  ══════════════════════════════════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__inner">
+        <span class="ticker__item">Diseño Web <span class="ticker__dot"></span></span>
+        <span class="ticker__item">E-commerce <span class="ticker__dot"></span></span>
+        <span class="ticker__item">SEO &amp; Posicionamiento <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Branding <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Marketing Digital <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Landing Pages <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Tiendas Online <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Gestión de Redes <span class="ticker__dot"></span></span>
+        <!-- Duplicado para loop infinito -->
+        <span class="ticker__item">Diseño Web <span class="ticker__dot"></span></span>
+        <span class="ticker__item">E-commerce <span class="ticker__dot"></span></span>
+        <span class="ticker__item">SEO &amp; Posicionamiento <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Branding <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Marketing Digital <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Landing Pages <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Tiendas Online <span class="ticker__dot"></span></span>
+        <span class="ticker__item">Gestión de Redes <span class="ticker__dot"></span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       SERVICIOS
+  ══════════════════════════════════════ -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-eyebrow">Servicios</p>
+        <h2 class="section-title">Todo lo que tu negocio<br>necesita para crecer</h2>
+        <p class="section-sub">Sin tecnicismos. Sin complicaciones. Te acompañamos en cada paso.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__icon">
+            <i class="bi bi-bag-heart" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">Tienda online</h3>
+          <p class="service-card__desc">Vendé tus productos 24/7. Catálogo, carrito, pagos y gestión de pedidos en un solo lugar.</p>
+          <span class="service-card__tag">E-commerce</span>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__icon">
+            <i class="bi bi-palette" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">Diseño web a medida</h3>
+          <p class="service-card__desc">Sitios únicos, rápidos y pensados para convertir visitantes en clientes reales.</p>
+          <span class="service-card__tag">Diseño</span>
+        </article>
+
+        <article class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__icon">
+            <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">Paquete lanzamiento</h3>
+          <p class="service-card__desc">Branding + web + redes en un solo paquete. Ideal para negocios que arrancan desde cero.</p>
+          <span class="service-card__tag">⭐ Más popular</span>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__icon">
+            <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">SEO &amp; Posicionamiento</h3>
+          <p class="service-card__desc">Aparecé primero en Google cuando tus clientes busquen lo que ofrecés.</p>
+          <span class="service-card__tag">Marketing</span>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__icon">
+            <i class="bi bi-phone" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">Gestión de redes</h3>
+          <p class="service-card__desc">Contenido, diseño y estrategia para que tus redes trabajen por vos.</p>
+          <span class="service-card__tag">Social media</span>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__icon">
+            <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+          </div>
+          <h3 class="service-card__title">Landing pages</h3>
+          <p class="service-card__desc">Páginas de alta conversión para campañas, productos o servicios específicos.</p>
+          <span class="service-card__tag">Performance</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CÓMO FUNCIONA
+  ══════════════════════════════════════ -->
+  <section class="how" id="como-funciona">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-eyebrow">Proceso</p>
+        <h2 class="section-title">Así trabajamos</h2>
+      </div>
+
+      <div class="how__steps">
+
+        <div class="how__step" data-aos="fade-up" data-aos-delay="0">
+          <div class="how__num" aria-hidden="true">01</div>
+          <h3 class="how__step-title">Hablamos</h3>
+          <p class="how__step-desc">Conocemos tu negocio, objetivos y lo que necesitás.</p>
+        </div>
+
+        <div class="how__connector" aria-hidden="true"></div>
+
+        <div class="how__step" data-aos="fade-up" data-aos-delay="150">
+          <div class="how__num" aria-hidden="true">02</div>
+          <h3 class="how__step-title">Diseñamos</h3>
+          <p class="how__step-desc">Creamos propuestas visuales y definimos la estructura.</p>
+        </div>
+
+        <div class="how__connector" aria-hidden="true"></div>
+
+        <div class="how__step" data-aos="fade-up" data-aos-delay="300">
+          <div class="how__num" aria-hidden="true">03</div>
+          <h3 class="how__step-title">Desarrollamos</h3>
+          <p class="how__step-desc">Construimos tu sitio con tecnología rápida y confiable.</p>
+        </div>
+
+        <div class="how__connector" aria-hidden="true"></div>
+
+        <div class="how__step" data-aos="fade-up" data-aos-delay="450">
+          <div class="how__num" aria-hidden="true">04</div>
+          <h3 class="how__step-title">Lanzamos</h3>
+          <p class="how__step-desc">Tu negocio en línea, optimizado y listo para crecer.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PRECIOS
+  ══════════════════════════════════════ -->
+  <section class="pricing" id="precios">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-eyebrow">Precios</p>
+        <h2 class="section-title">Simple, claro, sin sorpresas</h2>
+        <p class="section-sub">Elegí el plan que se adapta a tu negocio. Sin contratos eternos.</p>
+      </div>
+
+      <div class="pricing__grid">
+
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="0">
+          <p class="plan-card__name">Básico</p>
+          <div class="plan-card__price">
+            <span class="plan-card__currency">$</span>299
+          </div>
+          <p class="plan-card__period">pago único</p>
+          <ul class="plan-card__features">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Sitio web hasta 5 páginas</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Diseño responsive</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Formulario de contacto</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Dominio + hosting 1 año</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Soporte 30 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--full">Empezar →</a>
+        </div>
+
+        <div class="plan-card plan-card--popular" data-aos="fade-up" data-aos-delay="150">
+          <div class="plan-card__badge">⭐ Más elegido</div>
+          <p class="plan-card__name">Pro</p>
+          <div class="plan-card__price">
+            <span class="plan-card__currency">$</span>599
+          </div>
+          <p class="plan-card__period">pago único</p>
+          <ul class="plan-card__features">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Web completa + tienda online</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Hasta 50 productos</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Integración de pagos</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> SEO básico incluido</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Branding completo</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Soporte 90 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary btn--full">Empezar →</a>
+        </div>
+
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
+          <p class="plan-card__name">Agencia</p>
+          <div class="plan-card__price">
+            <span class="plan-card__currency">$</span>999
+          </div>
+          <p class="plan-card__period">pago único</p>
+          <ul class="plan-card__features">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Todo lo del plan Pro</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Productos ilimitados</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Campañas Google/Meta</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Gestión redes 3 meses</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Analítica y reportes</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Soporte prioritario 1 año</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--full">Empezar →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════ -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-eyebrow">Testimonios</p>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper testimonials__swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <p class="testimonial-card__quote">"Desde que SkyDev me creó la tienda online, mis ventas crecieron un 40%. Nunca pensé que tener presencia digital fuera tan accesible."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">MG</div>
+                <div>
+                  <strong class="testimonial-card__name">María González</strong>
+                  <span class="testimonial-card__biz">Ropa Mamá Feliz · Rosario</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <p class="testimonial-card__quote">"El equipo de SkyDev entendió exactamente lo que necesitaba. En menos de dos semanas tenía mi web lista y funcionando perfecto."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">CR</div>
+                <div>
+                  <strong class="testimonial-card__name">Carlos Ramírez</strong>
+                  <span class="testimonial-card__biz">Ferretería El Clavo · Córdoba</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <p class="testimonial-card__quote">"Tenía miedo de invertir en una web y que no funcionara. Con SkyDev recuperé la inversión en el primer mes. Muy recomendable."</p>
+              <footer class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">LP</div>
+                <div>
+                  <strong class="testimonial-card__name">Laura Pereyra</strong>
+                  <span class="testimonial-card__biz">Pastelería Dulce Hogar · Buenos Aires</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+        </div>
+        <div class="swiper-pagination" aria-label="Navegación testimonios"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner" data-aos="fade-up">
+      <h2 class="cta-banner__title">
+        ¿Listo para llevar tu negocio<br>
+        <em>al próximo nivel?</em>
+      </h2>
+      <a href="#contacto" class="btn btn--primary btn--lg">
+        Hablemos hoy
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════ -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-eyebrow">Contacto</p>
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="section-sub">Contanos tu proyecto y te respondemos en menos de 24 hs.</p>
+      </div>
+
+      <form class="contact__form" id="contact-form" novalidate data-aos="fade-up" data-aos-delay="100">
+        <div class="contact__row">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service" class="form-label">¿Qué necesitás?</label>
+          <select id="service" name="service" class="form-input form-select">
+            <option value="">Seleccioná un servicio</option>
+            <option value="tienda">Tienda online</option>
+            <option value="web">Diseño web</option>
+            <option value="lanzamiento">Paquete lanzamiento</option>
+            <option value="seo">SEO &amp; Marketing</option>
+            <option value="redes">Gestión de redes</option>
+            <option value="landing">Landing page</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" class="form-input form-textarea" placeholder="Contanos sobre tu negocio y lo que necesitás..." required rows="5"></textarea>
+          <span class="form-error" aria-live="polite"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          <span class="btn-text">Enviar mensaje</span>
+          <i class="bi bi-send" aria-hidden="true"></i>
+        </button>
+        <p class="contact__success" id="form-success" aria-live="polite" hidden>
+          <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+          ¡Mensaje enviado! Te respondemos en menos de 24 hs.
+        </p>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#inicio" class="nav__logo footer__logo" aria-label="SkyDev inicio">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 30 30" fill="none">
+              <path d="M8 23 L15 7 L22 23" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="11" y1="17" x2="19" y2="17" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="22" cy="10" r="3.2" fill="white" opacity="0.88"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">Sky<em>Dev</em></span>
+        </a>
+        <p class="footer__tagline">Tu negocio merece estar en línea.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram de SkyDev">
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="WhatsApp de SkyDev">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn de SkyDev">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación footer">
+        <h3 class="footer__nav-title">Servicios</h3>
+        <a href="#servicios" class="footer__nav-link">Tienda online</a>
+        <a href="#servicios" class="footer__nav-link">Diseño web</a>
+        <a href="#servicios" class="footer__nav-link">SEO &amp; Marketing</a>
+        <a href="#servicios" class="footer__nav-link">Gestión de redes</a>
+        <a href="#servicios" class="footer__nav-link">Landing pages</a>
+      </nav>
+
+      <nav class="footer__nav" aria-label="Links legales">
+        <h3 class="footer__nav-title">Empresa</h3>
+        <a href="#como-funciona" class="footer__nav-link">Cómo funciona</a>
+        <a href="#precios"       class="footer__nav-link">Precios</a>
+        <a href="#testimonios"   class="footer__nav-link">Testimonios</a>
+        <a href="#contacto"      class="footer__nav-link">Contacto</a>
+      </nav>
+
+      <div class="footer__contact">
+        <h3 class="footer__nav-title">Contacto</h3>
+        <a href="mailto:hola@skydev.com.ar" class="footer__contact-link">
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+          hola@skydev.com.ar
+        </a>
+        <a href="https://wa.me/5493410000000" class="footer__contact-link" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          +54 9 341 000-0000
+        </a>
+        <a href="https://skydev.com.ar" class="footer__contact-link">
+          <i class="bi bi-globe" aria-hidden="true"></i>
+          skydev.com.ar
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2025 SkyDev Web Services. Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacidad</a>
+          <a href="#" class="footer__legal-link">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
+
+</body>
+</html>

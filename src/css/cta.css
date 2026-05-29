@@ -1,0 +1,39 @@
+/* ═══════════════════════════════════════
+   CTA BANNER
+═══════════════════════════════════════ */
+
+.cta-banner {
+  padding-block: var(--space-20);
+  background: var(--carbon);
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(233,120,93,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.cta-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-10);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cta-banner__title {
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+  font-weight: var(--weight-xbold);
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.cta-banner__title em { color: var(--coral); }
+
+@media (max-width: 640px) {
+  .cta-banner__inner { justify-content: center; text-align: center; }
+}

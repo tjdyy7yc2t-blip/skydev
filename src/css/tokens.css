@@ -1,0 +1,107 @@
+/* ═══════════════════════════════════════════════
+   SKYDEV — Design Tokens
+   Todos los valores de marca en un solo lugar.
+   Modificá aquí y cambia todo el sitio.
+═══════════════════════════════════════════════ */
+
+:root {
+
+  /* ── Colores de marca ── */
+  --coral:        #E9785D;
+  --coral-light:  #F0997B;
+  --coral-pale:   #FAECE7;
+  --amber:        #EF9F27;
+  --carbon:       #2C2C2A;
+  --gray-mid:     #888780;
+  --gray-light:   #D3D1C7;
+  --cream:        #F1EFE8;
+  --green:        #1D9E75;
+  --white:        #FFFFFF;
+
+  /* ── Semántica de color ── */
+  --color-primary:        var(--coral);
+  --color-primary-hover:  #D85A30;
+  --color-primary-pale:   var(--coral-pale);
+  --color-accent:         var(--amber);
+  --color-success:        var(--green);
+
+  --color-bg:             var(--cream);
+  --color-bg-white:       var(--white);
+  --color-bg-dark:        var(--carbon);
+  --color-bg-card:        var(--white);
+
+  --color-text:           var(--carbon);
+  --color-text-muted:     var(--gray-mid);
+  --color-text-light:     var(--gray-light);
+  --color-text-white:     var(--white);
+
+  --color-border:         rgba(44, 44, 42, 0.10);
+  --color-border-dark:    rgba(255, 255, 255, 0.10);
+
+  /* ── Tipografía ── */
+  --font-head:  'Plus Jakarta Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body:  'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-lg:    1.125rem;   /* 18px */
+  --text-xl:    1.25rem;    /* 20px */
+  --text-2xl:   1.5rem;     /* 24px */
+  --text-3xl:   1.875rem;   /* 30px */
+  --text-4xl:   2.25rem;    /* 36px */
+  --text-5xl:   3rem;       /* 48px */
+  --text-6xl:   3.75rem;    /* 60px */
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-xbold:   800;
+
+  /* ── Espaciado ── */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+
+  /* ── Layout ── */
+  --container-max:  1200px;
+  --container-pad:  1.5rem;
+
+  /* ── Radios ── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-sm:  0 2px 8px rgba(44,44,42,0.06);
+  --shadow-md:  0 6px 24px rgba(44,44,42,0.09);
+  --shadow-lg:  0 16px 48px rgba(44,44,42,0.12);
+  --shadow-coral: 0 8px 32px rgba(233,120,93,0.22);
+
+  /* ── Transiciones ── */
+  --transition-fast:   150ms ease;
+  --transition-base:   220ms ease;
+  --transition-slow:   350ms ease;
+
+  /* ── Nav ── */
+  --nav-height:  68px;
+}
+
+/* ── Dark mode básico (preparado para futuro) ── */
+@media (prefers-color-scheme: dark) {
+  /* Actualmente el sitio usa fondo claro por diseño.
+     Descomenta y personaliza si querés soporte dark. */
+}
