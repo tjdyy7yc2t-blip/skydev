@@ -127,7 +127,7 @@
   gap: 0;
   background: var(--white);
   border-top: 1px solid var(--color-border);
-  padding: var(--space-4) var(--container-pad) var(--space-6);
+  padding: /*var(--space-4)*/ var(--container-pad) var(--space-6);
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-slow);
